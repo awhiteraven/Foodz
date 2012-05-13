@@ -12,6 +12,7 @@
 
 @interface Document : NSDocument <NSTableViewDataSource> {
     
+    // Tables & Fields
     IBOutlet NSTableView *foodzTable;
     IBOutlet NSTextField *foodzField;
     IBOutlet NSTextField *qualityField;
