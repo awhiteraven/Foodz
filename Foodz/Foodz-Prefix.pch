@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Foodz' target in the 'Foodz' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

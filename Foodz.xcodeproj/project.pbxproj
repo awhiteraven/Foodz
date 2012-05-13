@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42ECA9DD155DF05400A45294 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ECA9DC155DF05400A45294 /* Cocoa.framework */; };
+		42ECA9E7155DF05400A45294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42ECA9E5155DF05400A45294 /* InfoPlist.strings */; };
+		42ECA9E9155DF05400A45294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ECA9E8155DF05400A45294 /* main.m */; };
+		42ECA9ED155DF05400A45294 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42ECA9EB155DF05400A45294 /* Credits.rtf */; };
+		42ECA9F0155DF05400A45294 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ECA9EF155DF05400A45294 /* Document.m */; };
+		42ECA9F3155DF05400A45294 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42ECA9F1155DF05400A45294 /* Document.xib */; };
+		42ECA9F6155DF05400A45294 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42ECA9F4155DF05400A45294 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42ECA9D8155DF05400A45294 /* Foodz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42ECA9DC155DF05400A45294 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42ECA9DF155DF05400A45294 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42ECA9E0155DF05400A45294 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42ECA9E1155DF05400A45294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42ECA9E4155DF05400A45294 /* Foodz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Foodz-Info.plist"; sourceTree = "<group>"; };
+		42ECA9E6155DF05400A45294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42ECA9E8155DF05400A45294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42ECA9EA155DF05400A45294 /* Foodz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foodz-Prefix.pch"; sourceTree = "<group>"; };
+		42ECA9EC155DF05400A45294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		42ECA9EE155DF05400A45294 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		42ECA9EF155DF05400A45294 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		42ECA9F2155DF05400A45294 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
+		42ECA9F5155DF05400A45294 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42ECA9D5155DF05400A45294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42ECA9DD155DF05400A45294 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42ECA9CD155DF05400A45294 = {
+			isa = PBXGroup;
+			children = (
+				42ECA9E2155DF05400A45294 /* Foodz */,
+				42ECA9DB155DF05400A45294 /* Frameworks */,
+				42ECA9D9155DF05400A45294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42ECA9D9155DF05400A45294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42ECA9D8155DF05400A45294 /* Foodz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42ECA9DB155DF05400A45294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42ECA9DC155DF05400A45294 /* Cocoa.framework */,
+				42ECA9DE155DF05400A45294 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42ECA9DE155DF05400A45294 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42ECA9DF155DF05400A45294 /* AppKit.framework */,
+				42ECA9E0155DF05400A45294 /* CoreData.framework */,
+				42ECA9E1155DF05400A45294 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		42ECA9E2155DF05400A45294 /* Foodz */ = {
+			isa = PBXGroup;
+			children = (
+				42ECA9EE155DF05400A45294 /* Document.h */,
+				42ECA9EF155DF05400A45294 /* Document.m */,
+				42ECA9F1155DF05400A45294 /* Document.xib */,
+				42ECA9F4155DF05400A45294 /* MainMenu.xib */,
+				42ECA9E3155DF05400A45294 /* Supporting Files */,
+			);
+			path = Foodz;
+			sourceTree = "<group>";
+		};
+		42ECA9E3155DF05400A45294 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42ECA9E4155DF05400A45294 /* Foodz-Info.plist */,
+				42ECA9E5155DF05400A45294 /* InfoPlist.strings */,
+				42ECA9E8155DF05400A45294 /* main.m */,
+				42ECA9EA155DF05400A45294 /* Foodz-Prefix.pch */,
+				42ECA9EB155DF05400A45294 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42ECA9D7155DF05400A45294 /* Foodz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42ECA9F9155DF05400A45294 /* Build configuration list for PBXNativeTarget "Foodz" */;
+			buildPhases = (
+				42ECA9D4155DF05400A45294 /* Sources */,
+				42ECA9D5155DF05400A45294 /* Frameworks */,
+				42ECA9D6155DF05400A45294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodz;
+			productName = Foodz;
+			productReference = 42ECA9D8155DF05400A45294 /* Foodz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42ECA9CF155DF05400A45294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = aWhiteRaven;
+			};
+			buildConfigurationList = 42ECA9D2155DF05400A45294 /* Build configuration list for PBXProject "Foodz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42ECA9CD155DF05400A45294;
+			productRefGroup = 42ECA9D9155DF05400A45294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42ECA9D7155DF05400A45294 /* Foodz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42ECA9D6155DF05400A45294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42ECA9E7155DF05400A45294 /* InfoPlist.strings in Resources */,
+				42ECA9ED155DF05400A45294 /* Credits.rtf in Resources */,
+				42ECA9F3155DF05400A45294 /* Document.xib in Resources */,
+				42ECA9F6155DF05400A45294 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42ECA9D4155DF05400A45294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42ECA9E9155DF05400A45294 /* main.m in Sources */,
+				42ECA9F0155DF05400A45294 /* Document.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42ECA9E5155DF05400A45294 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42ECA9E6155DF05400A45294 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42ECA9EB155DF05400A45294 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42ECA9EC155DF05400A45294 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		42ECA9F1155DF05400A45294 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42ECA9F2155DF05400A45294 /* en */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		42ECA9F4155DF05400A45294 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42ECA9F5155DF05400A45294 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42ECA9F7155DF05400A45294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42ECA9F8155DF05400A45294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42ECA9FA155DF05400A45294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Foodz/Foodz-Prefix.pch";
+				INFOPLIST_FILE = "Foodz/Foodz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42ECA9FB155DF05400A45294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Foodz/Foodz-Prefix.pch";
+				INFOPLIST_FILE = "Foodz/Foodz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42ECA9D2155DF05400A45294 /* Build configuration list for PBXProject "Foodz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ECA9F7155DF05400A45294 /* Debug */,
+				42ECA9F8155DF05400A45294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42ECA9F9155DF05400A45294 /* Build configuration list for PBXNativeTarget "Foodz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ECA9FA155DF05400A45294 /* Debug */,
+				42ECA9FB155DF05400A45294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42ECA9CF155DF05400A45294 /* Project object */;
+}
