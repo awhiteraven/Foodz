@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ListItem : NSObject {
-    
+    // ivars
+    NSString *itemName;
+    int quality;
 }
 
 @end
