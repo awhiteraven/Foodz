@@ -75,30 +75,13 @@
 }
 
 - (IBAction)addFood:(id)sender {
-    for (NSString *aItem in foodzList) {
-        if ([aItem isEqualToString:[foodzField stringValue]]) {
-            NSAlert *existingItemAlert = [[NSAlert alloc]init]; {
-                [existingItemAlert addButtonWithTitle:@"Cancel"];
-                [existingItemAlert addButtonWithTitle:@"Add Item Anyway"];
-                [existingItemAlert setMessageText:@"Item already exists."];
-                [existingItemAlert setInformativeText:@"This is a duplicate."];
-                
-                [existingItemAlert setAlertStyle:NSInformationalAlertStyle];
-                
-                int existValue = (int)[existingItemAlert runModal];
-                [existingItemAlert release];
-                if (existValue == NSAlertSecondButtonReturn) 
-                    break;
-                else 
-                    return;
-            }
-        }
-    }
+    NSNumber *quantity = [NSNumber numberWithInt:[qualityField intValue]];
     
-    [foodzList addObject:[foodzField stringValue]]; 
-        
-    if (sender == foodzField) 
-        [foodzField setStringValue:@""];
+    NSMutableDictionary *newItem = [NSMutableDictionary dictionary];
+    [newItem setValue:[foodzField stringValue] forKey:@"nameKey"];
+    [newItem setValue:quantity forKey:@"qualityKey"];
+     
+    [foodzList addObject:newItem]; 
     
     [foodzTable reloadData];
     
@@ -157,11 +140,27 @@
 }
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
-    return [foodzList objectAtIndex:rowIndex];
+    NSDictionary *itemDictionary = [foodzList objectAtIndex:rowIndex];
+    
+    if (aTableColumn == qualityColumn) 
+        return [itemDictionary valueForKey:@"qualityKey"];
+    else if (aTableColumn == itemColumn)
+        return [itemDictionary valueForKey:@"nameKey"];
+    else
+        return nil;
+    
 }
 
 - (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
-    [foodzList replaceObjectAtIndex:rowIndex withObject:anObject];
+    NSDictionary *itemDictionary = [foodzList objectAtIndex:rowIndex];
+    
+    NSLog(@"%@",[anObject class]);
+    
+    if (aTableColumn == qualityColumn) 
+        [itemDictionary setValue:anObject forKey:@"qualityKey"];
+    else if (aTableColumn == itemColumn)
+        [itemDictionary setValue:anObject forKey:@"nameKey"];
+ 
 }
 
 

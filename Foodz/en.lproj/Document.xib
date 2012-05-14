@@ -66,7 +66,7 @@
 											<string key="NSFrameSize">{465, 323}</string>
 											<reference key="NSSuperview" ref="145277973"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="561323526"/>
+											<reference key="NSNextKeyView" ref="690042528"/>
 											<string key="NSReuseIdentifierKey">_NS:1828</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="456817767">
@@ -88,22 +88,27 @@
 												<string key="NSReuseIdentifierKey">_NS:1833</string>
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
-												<object class="NSTableColumn" id="415329119">
-													<double key="NSWidth">92.140625</double>
-													<double key="NSMinWidth">40</double>
-													<double key="NSMaxWidth">1000</double>
+												<object class="NSTableColumn" id="942471804">
+													<double key="NSWidth">227.67578125</double>
+													<double key="NSMinWidth">10</double>
+													<double key="NSMaxWidth">3.4028234663852886e+38</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
 														<int key="NSCellFlags">75628096</int>
 														<int key="NSCellFlags2">2048</int>
-														<string key="NSContents">Quality</string>
+														<string key="NSContents">Item</string>
 														<object class="NSFont" key="NSSupport" id="26">
 															<string key="NSName">LucidaGrande</string>
 															<double key="NSSize">11</double>
 															<int key="NSfFlags">3100</int>
 														</object>
 														<object class="NSColor" key="NSBackgroundColor">
-															<int key="NSColorSpace">3</int>
-															<bytes key="NSWhite">MC4zMzMzMzI5ODU2AA</bytes>
+															<int key="NSColorSpace">6</int>
+															<string key="NSCatalogName">System</string>
+															<string key="NSColorName">headerColor</string>
+															<object class="NSColor" key="NSColor" id="112837194">
+																<int key="NSColorSpace">3</int>
+																<bytes key="NSWhite">MQA</bytes>
+															</object>
 														</object>
 														<object class="NSColor" key="NSTextColor" id="1056307853">
 															<int key="NSColorSpace">6</int>
@@ -115,7 +120,7 @@
 															</object>
 														</object>
 													</object>
-													<object class="NSTextFieldCell" key="NSDataCell" id="391541166">
+													<object class="NSTextFieldCell" key="NSDataCell" id="100104518">
 														<int key="NSCellFlags">337772096</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
@@ -146,27 +151,22 @@
 													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="109949224"/>
 												</object>
-												<object class="NSTableColumn" id="942471804">
-													<double key="NSWidth">367</double>
-													<double key="NSMinWidth">10</double>
-													<double key="NSMaxWidth">3.4028234663852886e+38</double>
+												<object class="NSTableColumn" id="415329119">
+													<double key="NSWidth">231.140625</double>
+													<double key="NSMinWidth">40</double>
+													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
 														<int key="NSCellFlags">75628096</int>
 														<int key="NSCellFlags2">2048</int>
-														<string key="NSContents">Item</string>
+														<string key="NSContents">Quality</string>
 														<reference key="NSSupport" ref="26"/>
 														<object class="NSColor" key="NSBackgroundColor">
-															<int key="NSColorSpace">6</int>
-															<string key="NSCatalogName">System</string>
-															<string key="NSColorName">headerColor</string>
-															<object class="NSColor" key="NSColor" id="112837194">
-																<int key="NSColorSpace">3</int>
-																<bytes key="NSWhite">MQA</bytes>
-															</object>
+															<int key="NSColorSpace">3</int>
+															<bytes key="NSWhite">MC4zMzMzMzI5ODU2AA</bytes>
 														</object>
 														<reference key="NSTextColor" ref="1056307853"/>
 													</object>
-													<object class="NSTextFieldCell" key="NSDataCell" id="100104518">
+													<object class="NSTextFieldCell" key="NSDataCell" id="391541166">
 														<int key="NSCellFlags">337772096</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
@@ -258,7 +258,7 @@
 							<string key="NSFrame">{{20, 52}, {467, 341}}</string>
 							<reference key="NSSuperview" ref="568628114"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="690042528"/>
+							<reference key="NSNextKeyView" ref="145277973"/>
 							<string key="NSReuseIdentifierKey">_NS:1824</string>
 							<int key="NSsFlags">133682</int>
 							<reference key="NSVScroller" ref="561323526"/>
@@ -302,7 +302,6 @@
 							<string key="NSFrame">{{427, 23}, {60, 19}}</string>
 							<reference key="NSSuperview" ref="568628114"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:2434</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="136142225">
@@ -775,6 +774,7 @@
 						<string key="foodzTable">NSTableView</string>
 						<string key="itemColumn">NSTableColumn</string>
 						<string key="qualityColumn">NSTableColumn</string>
+						<string key="qualityField">NSTextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="foodzField">
@@ -792,6 +792,10 @@
 						<object class="IBToOneOutletInfo" key="qualityColumn">
 							<string key="name">qualityColumn</string>
 							<string key="candidateClassName">NSTableColumn</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="qualityField">
+							<string key="name">qualityField</string>
+							<string key="candidateClassName">NSTextField</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
