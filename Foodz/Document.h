@@ -21,9 +21,14 @@
     IBOutlet NSTableColumn *qualityColumn;
     IBOutlet NSTableColumn *itemColumn;
     
+    IBOutlet NSProgressIndicator *pBar;
+    
     NSMutableArray *foodzList;
 }
 - (IBAction)addFood:(id)sender;
 - (IBAction)removeFood:(id)sender;
+- (IBAction)pBarAdd:(id)sender;
+- (IBAction)pBarMinus:(id)sender;
+
 
 @end

@@ -27,6 +27,7 @@
         [minecraft setValue:@"10" forKey:@"qualityKey"];
         [foodzList addObject:minecraft];
         
+        [pBar setUsesThreadedAnimation:NO];
     }
     return self;
 }
@@ -111,6 +112,17 @@
     }
     
     
+}
+
+- (IBAction)pBarAdd:(id)sender {
+    [pBar incrementBy:10];
+    for (int i = 0; i < 10; i++) {
+        [pBar incrementBy:1];
+    }
+}
+
+- (IBAction)pBarMinus:(id)sender {
+    [pBar incrementBy:-10];
 }
 
 
