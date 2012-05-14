@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424371731560A11D00285F10 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 424371721560A11D00285F10 /* ListItem.m */; };
 		42ECA9DD155DF05400A45294 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ECA9DC155DF05400A45294 /* Cocoa.framework */; };
 		42ECA9E7155DF05400A45294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42ECA9E5155DF05400A45294 /* InfoPlist.strings */; };
 		42ECA9E9155DF05400A45294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ECA9E8155DF05400A45294 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		424371711560A11D00285F10 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		424371721560A11D00285F10 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 		42ECA9D8155DF05400A45294 /* Foodz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ECA9DC155DF05400A45294 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		42ECA9DF155DF05400A45294 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,8 @@
 			children = (
 				42ECA9EE155DF05400A45294 /* Document.h */,
 				42ECA9EF155DF05400A45294 /* Document.m */,
+				424371711560A11D00285F10 /* ListItem.h */,
+				424371721560A11D00285F10 /* ListItem.m */,
 				42ECA9F1155DF05400A45294 /* Document.xib */,
 				42ECA9F4155DF05400A45294 /* MainMenu.xib */,
 				42ECA9E3155DF05400A45294 /* Supporting Files */,
@@ -172,6 +177,7 @@
 			files = (
 				42ECA9E9155DF05400A45294 /* main.m in Sources */,
 				42ECA9F0155DF05400A45294 /* Document.m in Sources */,
+				424371731560A11D00285F10 /* ListItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				42ECA9FB155DF05400A45294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
