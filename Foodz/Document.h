@@ -11,7 +11,7 @@
 // Document objects provide functionality typical documents have
 
 @interface Document : NSDocument <NSTableViewDataSource> {
-    
+    // This is a git test. 
     // Tables & Fields
     IBOutlet NSTableView *foodzTable;
     IBOutlet NSTextField *foodzField;
